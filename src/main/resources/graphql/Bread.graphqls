@@ -1,3 +1,13 @@
 type Bread {
-	type: String!
+	name: String!
+	bakeTime: Int
+	flourType: FlourType!
+}
+
+enum FlourType {
+	ALL_PURPOSE
+	ALMOND
+	AMARANTH
+	BARLEY
+	BUCKWHEAT
 }

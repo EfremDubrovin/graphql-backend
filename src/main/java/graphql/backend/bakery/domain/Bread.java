@@ -9,5 +9,10 @@ public class Bread {
 
 	private final int id;
 
-	private final String type;
+	private final String name;
+
+	private final Integer bakeTime;
+
+	private final FlourType flourType;
+
 }
