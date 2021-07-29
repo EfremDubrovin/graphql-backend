@@ -1,0 +1,7 @@
+schema {
+	query: BakeryQueries
+}
+
+type BakeryQueries {
+	breads: [Bread]
+}
