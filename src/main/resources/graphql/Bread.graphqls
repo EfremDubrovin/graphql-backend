@@ -3,6 +3,7 @@ type Bread {
 	bakeTime: Int
 	flourTypes: [FlourType]
 	extraIngredients: ExtraIngredients
+	bakery: Bakery
 }
 
 enum FlourType {
@@ -15,3 +16,7 @@ enum FlourType {
 
 # additional ingredients like olives, cheese, chocolate, etc
 scalar ExtraIngredients
+
+type Bakery {
+	name: String!
+}

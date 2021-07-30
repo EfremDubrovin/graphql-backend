@@ -7,9 +7,8 @@ import java.util.List;
 
 @Getter
 @RequiredArgsConstructor
-public class ExtraIngredients {
-
-	private final List<String> extraIngredients;
-
-	private final String proportions;
+public class Bakery {
+	private final int id;
+	private final String name;
+	private final List<Integer> breadIds;
 }

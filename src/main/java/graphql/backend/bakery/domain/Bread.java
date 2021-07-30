@@ -18,4 +18,6 @@ public class Bread {
 	private final List<FlourType> flourTypes;
 
 	private final ExtraIngredients extraIngredients;
+
+	private Bakery bakery;
 }

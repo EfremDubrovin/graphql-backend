@@ -3,7 +3,6 @@ package graphql.backend.bakery;
 import graphql.backend.bakery.domain.Bread;
 import graphql.backend.bakery.repository.BreadRepository;
 import graphql.kickstart.tools.GraphQLQueryResolver;
-import graphql.kickstart.tools.GraphQLResolver;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
