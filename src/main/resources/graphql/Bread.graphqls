@@ -13,4 +13,5 @@ enum FlourType {
 	BUCKWHEAT
 }
 
+# additional ingredients like olives, cheese, chocolate, etc
 scalar ExtraIngredients

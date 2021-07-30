@@ -25,9 +25,6 @@ public class BakeryApplication {
 	@Autowired
 	private BreadRepository breadRepository;
 
-	@Autowired
-	private CustomScalars customScalars;
-
 	public static void main(String[] args) {
 		SpringApplication.run(BakeryApplication.class);
 	}
@@ -39,7 +36,7 @@ public class BakeryApplication {
 
 	@Bean
 	public GraphQLScalarType getExtraIngredients() {
-		return customScalars.getExtraIngredients();
+		return CustomScalars.EXTRA_INGREDIENTS;
 	}
 
 	private void initRepository() {
