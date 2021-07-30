@@ -15,6 +15,7 @@ public class Bread {
 
 	private final Integer bakeTime;
 
-	private final List<FlourType> flourType;
+	private final List<FlourType> flourTypes;
 
+	private final ExtraIngredients extraIngredients;
 }
