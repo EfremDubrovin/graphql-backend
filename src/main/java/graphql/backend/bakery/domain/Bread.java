@@ -3,6 +3,8 @@ package graphql.backend.bakery.domain;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+import java.util.List;
+
 @Getter
 @RequiredArgsConstructor
 public class Bread {
@@ -13,6 +15,6 @@ public class Bread {
 
 	private final Integer bakeTime;
 
-	private final FlourType flourType;
+	private final List<FlourType> flourType;
 
 }

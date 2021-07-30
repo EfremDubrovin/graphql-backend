@@ -1,7 +1,8 @@
 type Bread {
 	name: String!
 	bakeTime: Int
-	flourType: FlourType!
+	flourTypes: [FlourType]
+	extraIngredients: ExtraIngredients
 }
 
 enum FlourType {
@@ -11,3 +12,5 @@ enum FlourType {
 	BARLEY
 	BUCKWHEAT
 }
+
+scalar ExtraIngredients
