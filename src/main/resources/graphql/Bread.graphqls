@@ -1,5 +1,6 @@
 type Bread {
 	name: String!
+	bigName: String
 	bakeTime: Int
 	flourTypes: [FlourType]
 	extraIngredients: ExtraIngredients

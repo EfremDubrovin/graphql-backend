@@ -2,8 +2,6 @@ package graphql.backend.bakery;
 
 import graphql.backend.bakery.domain.ExtraIngredients;
 import graphql.schema.*;
-import lombok.Getter;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;

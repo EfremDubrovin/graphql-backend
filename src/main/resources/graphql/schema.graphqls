@@ -1,7 +1,12 @@
 schema {
 	query: BakeryQueries
+	mutation: BakeryMutations
 }
 
 type BakeryQueries {
 	breads: [Bread]
+}
+
+type BakeryMutations {
+	createBread(name: String!): Bread
 }
