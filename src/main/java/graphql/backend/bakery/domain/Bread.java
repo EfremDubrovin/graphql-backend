@@ -1,17 +1,15 @@
 package graphql.backend.bakery.domain;
 
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 
 @Getter
 public class Bread {
 
-	private static final AtomicInteger ID_SEQUENCE = new AtomicInteger(100);
-
-	private int id;
+	@Setter
+	private Integer id;
 
 	private String name;
 
@@ -24,7 +22,6 @@ public class Bread {
 	private Bakery bakery;
 
 	public Bread (String name) {
-		id = ID_SEQUENCE.incrementAndGet();
 		this.name = name;
 	}
 
