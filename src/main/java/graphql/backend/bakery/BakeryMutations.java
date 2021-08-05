@@ -13,7 +13,7 @@ public class BakeryMutations implements GraphQLMutationResolver {
 
 	private final BreadRepository breadRepository;
 
-	public Bread createBread(String name) {
+	public Bread createBreadWithName(String name) {
 		Bread bread = new Bread(name);
 		breadRepository.addBread(bread);
 		return bread;

@@ -8,7 +8,7 @@ type BakeryQueries {
 }
 
 type BakeryMutations {
-	createBread(name: String!): Bread
+	createBreadWithName(name: String!): Bread
 	createBread(bread: BreadInput!): Bread
 }
 
