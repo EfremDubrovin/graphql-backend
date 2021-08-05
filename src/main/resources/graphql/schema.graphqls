@@ -1,10 +1,26 @@
 schema {
-	query: BakeryQueries
-	mutation: BakeryMutations
+	query: EmployeeQueries
+	mutation: EmployeeMutations
+}
+
+type EmployeeQueries{
+	employees: [Employee]
+	employeesByName(name: String): Employee
+}
+
+type EmployeeMutations {
+	createEmployee(employee: EmployeeInput): Employee
+}
+
+input EmployeeInput {
+	name: String
+	age: Int
+	personalInfo: String
 }
 
 type BakeryQueries {
 	breads: [Bread]
+	breadByName(name: String): [Bread]
 }
 
 type BakeryMutations {
